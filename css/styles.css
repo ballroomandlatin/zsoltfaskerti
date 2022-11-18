@@ -333,6 +333,11 @@ span {
      margin-left: auto;
    }
 
+   #current {
+     text-align: left;
+     margin-left: 4%;
+   }
+
    .pic {
      width: 45%;
      padding: 3.5%;
