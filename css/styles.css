@@ -232,6 +232,13 @@ span {
      margin-left: auto;
    }
 
+   #current {
+     text-align: left;
+     margin-left: 2%;
+     font-weight: bold;
+     font-size: 1em;
+   }
+
    .pic {
      width: 28%;
      padding: 3%;
@@ -335,9 +342,9 @@ span {
 
    #current {
      text-align: left;
-     margin-left: 3%;
+     margin-left: 2%;
      font-weight: bold;
-     font-size-adjust: auto;
+     font-size: 1em;
    }
 
    .pic {
