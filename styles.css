@@ -23,12 +23,14 @@ menu {
      padding-top: 4%;
      padding-right: 16%;
      margin-bottom: 0;
-     gap: 2.2em;
+     gap: 3em;
 }
 
 i {
   /* color: #FF9234; */
   color: #FF9300;
+  /* text-shadow: 1px 1px 2px #FF9300; */
+  text-shadow: 2px 2px 4px grey;
   font-size: 1.9em;
 }
 
@@ -41,6 +43,29 @@ a:hover {
   font-size: 1.3em;
 }
 
+[data-title]:hover:after {
+  visibility: visible;
+}
+
+[data-title]:after {
+  content: attr(data-title);
+  background-color: transparent;
+  color: #FF9234;
+  font-family: 'Source Serif Pro', serif;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 0.8em;
+  position: absolute;
+  visibility: hidden;
+  top: -2.6em;
+  right: 5%;
+}
+
+[data-title] {
+    position: relative;
+}
+
+
 footer {
   margin-top: 5%;
   width: 100%;
@@ -48,6 +73,16 @@ footer {
   font-size: 1em;
   font-weight: bold;
   text-shadow: 1px 1px #7895B2;
+}
+
+.socialfooter {
+  list-style-type: none;
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2.2em;
+  padding-bottom: 3px;
+  scale: 0.9;
 }
 
 #vibes {
@@ -150,6 +185,12 @@ h4 {
   padding: 0;
 }
 
+.ornament3 {
+  width: 13%;
+  margin-left: 47%;
+  padding: 0;
+}
+
 .follow {
   padding: 0;
   margin-top: 1%;
@@ -174,8 +215,9 @@ h4 {
   display: inline-block;
   position: relative;
   border-radius: 8%;
-  /* background-color: rgb(255, 146, 52, 0.3); */
-  background-color: rgb(255, 147, 1, 0.2);
+  background-color: rgb(255, 146, 52, 0.23);
+  /* background-color: rgb(255, 147, 1, 0.2); */
+  box-shadow: 5px 10px 18px #888888;
   padding-top: 1.5%;
   padding-left: 1.5%;
   padding-right: 1.5%;
@@ -265,7 +307,7 @@ h4 {
      margin-right: auto;
    }
 
-.ornament1, .ornament2 {
+.ornament1, .ornament2, .ornament3 {
   visibility: collapse;
 }
 
@@ -316,7 +358,7 @@ h4 {
   menu {
     padding-top: 6.5%;
     padding-left: 17%;
-    gap: 2em;
+    gap: 2.5em;
     justify-content:center;
   }
 
@@ -373,7 +415,7 @@ h4 {
      margin-right: auto;
    }
 
-.ornament1, .ornament2 {
+.ornament1, .ornament2, .ornament3 {
   visibility: collapse;
 }
 
